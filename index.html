@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+
+    
+
+      <div class="card mx-auto w-50 mt-3" id="PaymentForm">
+        <h5 class="card-header">Payment form</h5>
+        <div class="card-body">
+  
+            <div class="alert alert-danger" role="alert">
+               Some fields are missing
+              </div>
+              <form class="row g-3">
+                <div class="col-6">
+                    <label for="inputCard" class="form-label">Card #</label>
+                    <input type="password" class="form-control" id="inputCard" placeholder="xxxxxx">
+                  </div>
+                <div class="col-3">
+                  <label for="inputCvc" class="form-label">CVC #</label>
+                  <input type="password" class="form-control" id="inputCvc" placeholder="000">
+                </div>
+                <div class="col-3">
+                    <label for="inputAmount" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="inputAmount" placeholder="150.00$">
+                </div>
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="inputFirstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" placeholder="John" aria-label="First name" id="inputFirstName">
+                    </div>
+                    <div class="col">
+                        <label for="inputLastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Doe" aria-label="Last name" id="inputLastName">
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option value="1">California</option>
+                    <option value="2">Florida</option>
+                    <option value="3">Texas</option>
+                    <option value="4">New York</option>
+                    <option value="5">Georgia</option>
+                    <option value="6">Hawai</option>
+                    <option value="7">Another one</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="row g-3">
+                    <span class="col-3"> We Accept:
+                        <div class="bg-secondary text-light b-radius" id="paymentmethod">
+                        <input type="radio" id="mastercard" name="Payment" value="mastercard"> <label for="mastercard"> <i class="fa-brands fa-cc-mastercard"></i></label>
+                        <input type="radio" id="visa" value="visa" name="Payment"> <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                        <input type="radio" id="dinersclub" value="dinersclub" name="Payment"><label for="dinersclub"><i class="fa-brands fa-cc-diners-club"></i></label>
+                        <input type="radio" id="applepay" value="applepay" name="Payment"> <label for="applepay"><i class="fa-brands fa-cc-apple-pay"></i></label>
+                        </div>
+                      </span>
+                <div class="col-9 mb-3">
+                    <label for="NotesTextarea" class="form-label">Notes</label>
+                    <textarea class="form-control" id="NotesTextarea" rows="3"></textarea>
+                    <span class="text-body-secondary" id="notes2">add any notes here.</span>
+                  </div>
+        </div>
+        
+      
+  </div>
+  <div class="card-footer w-100">
+    <button type="submit" class="btn btn-secondary">Cancel</button>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </div>
+</form>
+      <script src="https://kit.fontawesome.com/e39c0c5e3c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
